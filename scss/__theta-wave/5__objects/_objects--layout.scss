@@ -1,6 +1,8 @@
 .layout { }
 
-.wrapper { }
+.wrapper {
+  @include box-reset;
+}
 
 .layout > .wrapper {
   display: flex;
@@ -8,17 +10,19 @@
   justify-content: center;
 }
 .layout:not(.flush) > .wrapper {
-  padding:  3em 1.5em;
+  padding:  1.5em;
 }
 
-.layout--align-left > .wrapper {
-  margin-right: calc((100% - #{map-get($breakpoints, 'giant')})/2);
-}
-.layout--align-center > .wrapper {
-  margin: 0 calc((100% - #{map-get($breakpoints, 'giant')}) / 2);
-}
-.layout--align-right > .wrapper {
-  margin-left: calc((100% - #{map-get($breakpoints, 'giant')})/2);
+@media all and (min-width: #{map-get($breakpoints, 'giant')}) {
+  .layout--align-left > .wrapper {
+    margin-right: calc((100% - #{map-get($breakpoints, 'giant')})/2);
+  }
+  .layout--align-center > .wrapper {
+    margin: 0 calc((100% - #{map-get($breakpoints, 'giant')}) / 2);
+  }
+  .layout--align-right > .wrapper {
+    margin-left: calc((100% - #{map-get($breakpoints, 'giant')})/2);
+  }
 }
 
 .layout--valign-top > .wrapper {
