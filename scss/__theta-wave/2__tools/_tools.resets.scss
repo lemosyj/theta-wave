@@ -1,0 +1,10 @@
+@mixin margin-reset {
+  margin: 0;
+}
+@mixin padding-reset {
+  padding: 0;
+}
+@mixin box-reset {
+  @include margin-reset;
+  @include padding-reset;
+}

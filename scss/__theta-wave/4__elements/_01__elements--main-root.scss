@@ -1,0 +1,10 @@
+*:focus {
+  outline: none;
+}
+
+//
+// Increase root font-size from 0.875rem (14px) to 1.0625rem (17px)
+//
+html{
+  @include theta-wave(0.875rem, 1.0625rem);
+}

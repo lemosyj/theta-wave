@@ -1,0 +1,166 @@
+form { }
+fieldset { }
+
+form:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+fieldset:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+legend { }
+
+input { }
+
+input[type="search"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  max-height: 1em;
+}
+
+form,
+fieldset,
+button, .button,
+select,
+// 'button'-type inputs
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+// 'boolean'-type inputs
+input[type="checkbox"],
+input[type="radio"],
+// 'text'-type inputs
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="search"]::-webkit-search-decoration,
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+//
+label,
+legend,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+button,
+.button:link, .button:visited,
+select,
+// 'button'-type inputs
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+// 'boolean'-type inputs
+input[type="checkbox"],
+input[type="radio"],
+// 'text'-type inputs
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+button, .button,
+select,
+// 'button'-type inputs
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+// 'text'-type inputs
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea {
+  padding: 1em;
+}
+
+button, .button,
+select,
+// 'button'-type inputs
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  display: inline-block;
+  width: auto;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+// 'boolean'-type inputs
+input[type="checkbox"],
+input[type="radio"] {
+  width: 2em;
+  height: 2em;
+  margin: 0 0.5em;
+  vertical-align: text-bottom;
+}
+
+// 'text'-type inputs
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+input.input--inline {
+  display: inline-block;
+  width: auto;
+  padding: 0.5em;
+}
+
+label { }
+
+meter { }
