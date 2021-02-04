@@ -1,2 +1,2 @@
-# theta-wave
-A CSS framework that scales units and maintains vertical typography rhythm based on a given base rem value.
+# Theta Wave
+A simple CSS framework that responds fluidly between type scales at given breakpoints.
