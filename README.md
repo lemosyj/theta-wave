@@ -1,2 +1,2 @@
-# Theta Wave
-A simple CSS framework that responds fluidly between type scales at given breakpoints.
+# Theta Wave CSS
+Theta waves occur in the brain during **REM** sleep and generate the theta **rhythm**, which is typically measured between **4-7** hZ. The Theta Wave CSS framework generates a vertical **rhythm** based on a fluidly-responsive **REM** value of 1**4**px-1**7**px. This *"Theta Wave"* can be customized to occur between given breakpoints and fluctuate between given type scales (https://type-scale.com).
