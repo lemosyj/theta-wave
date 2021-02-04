@@ -1,0 +1,58 @@
+.component {
+  width: 100%;
+}
+
+.component:not(.flush) > .wrapper {
+  padding: 1.5em;
+}
+
+@media all and (min-width: 480px) {
+  .component--20pct,
+.component--25pct,
+.component--30pct,
+.component--33pct {
+    width: 50%;
+  }
+}
+@media all and (min-width: 768px) {
+  .component--20pct {
+    width: calc(100% / 3);
+  }
+
+  .component--30pct {
+    width: calc(100% / 3);
+  }
+
+  .component--33pct {
+    width: calc(100% / 3);
+  }
+
+  .component--40pct {
+    width: 40%;
+  }
+
+  .component--50pct {
+    width: 50%;
+  }
+
+  .component--60pct {
+    width: 60%;
+  }
+
+  .component--70pct {
+    width: 70%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .component--20pct {
+    width: 20%;
+  }
+
+  .component--25pct {
+    width: 25%;
+  }
+
+  .component--30pct {
+    width: 30%;
+  }
+}

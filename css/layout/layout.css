@@ -1,0 +1,36 @@
+.layout > .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.layout:not(.flush) > .wrapper {
+  padding: 3em 1.5em;
+}
+
+.layout--align-left > .wrapper {
+  margin-right: calc((100% - 1200px)/2);
+}
+
+.layout--align-center > .wrapper {
+  margin: 0 calc((100% - 1200px) / 2);
+}
+
+.layout--align-right > .wrapper {
+  margin-left: calc((100% - 1200px)/2);
+}
+
+.layout--valign-top > .wrapper {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.layout--valign-middle > .wrapper {
+  align-items: center;
+  align-content: center;
+}
+
+.layout--valign-bottom > .wrapper {
+  align-items: flex-end;
+  align-content: flex-end;
+}
