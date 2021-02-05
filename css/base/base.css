@@ -84,6 +84,7 @@ template {
 
 html {
   min-height: 0vw;
+  -webkit-text-size-adjust: 100%;
 }
 html {
   font-size: 0.875rem;
