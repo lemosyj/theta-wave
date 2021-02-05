@@ -8,4 +8,5 @@
 html{
   @include theta-wave(0.875rem, 1.0625rem);
   min-height: 0vw;
+  -webkit-text-size-adjust: 100%;
 }
