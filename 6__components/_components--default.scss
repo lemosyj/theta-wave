@@ -1,0 +1,32 @@
+.component {
+  width: 100%;
+}
+.component > .wrapper,
+.component__element {
+  margin: 0.75em;
+}
+.component.is-flush > .wrapper,
+.component.is-flush .component__element {
+  @include margin-reset;
+}
+
+@media all and (min-width: #{map-get($breakpoints, 'xsmall')}) {
+  .component--20pct,
+  .component--25pct,
+  .component--30pct,
+  .component--33pct { width: 50%; }
+}
+@media all and (min-width: #{map-get($breakpoints, 'medium')}) {
+  .component--20pct { width: calc(100% / 3); }
+  .component--30pct { width: calc(100% / 3); }
+  .component--33pct { width: calc(100% / 3); }
+  .component--40pct { width: 40%; }
+  .component--50pct { width: 50%; }
+  .component--60pct { width: 60%; }
+  .component--70pct { width: 70%; }
+}
+@media all and (min-width: #{map-get($breakpoints, 'xlarge')}) {
+  .component--20pct { width: 20%; }
+  .component--25pct { width: 25%; }
+  .component--30pct { width: 30%; }
+}

@@ -1,0 +1,40 @@
+blockquote {
+  @include box-reset;
+}
+
+dl, dd {
+  @include box-reset;
+}
+
+figure {
+  @include box-reset;
+}
+
+hr {
+  @include box-reset;
+  box-sizing: content-box; // Add the correct box sizing in Firefox.
+  height: 0; // Add the correct box sizing in Firefox.
+  overflow: visible; // Show the overflow in Edge and IE.
+}
+
+li > {
+  ol,
+  ul {
+    @include margin-reset;
+  }
+}
+
+ol, ul {
+  @include box-reset;
+}
+
+p {
+  @include margin-reset;
+}
+
+pre {
+  @include box-reset;
+  font-family: monospace, monospace; // Correct the inheritance and scaling of font size in all browsers.
+  font-size: 1em; // Correct the odd `em` font sizing in all browsers.
+  white-space: pre-wrap;
+}

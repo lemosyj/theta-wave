@@ -1,0 +1,28 @@
+/// Responsive breakpoints
+///
+/// @param {string} $name
+///   The breakpoint name
+/// @return {string}
+///   The breakpoint value in 'px'
+
+@function breakpoint-value($name) {
+  @if type-of($name) == 'number' {
+    @return $name;
+  }
+
+  $value: map-get($breakpoints, $name);
+
+  @if $value == null {
+    @error 'Breakpoint #{$name} not found';
+  }
+
+  @return $value;
+}
+
+@mixin breakpoint($name) {
+  $value: breakpoint-value($name);
+
+  @media (min-width: $value) {
+    @content;
+  }
+}

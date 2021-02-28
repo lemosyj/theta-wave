@@ -1,0 +1,43 @@
+@use "sass:math";
+//
+//                                                                   - h1-h6
+h1, h2, h3, h4, h5, h6 {
+  @include margin-reset;
+  line-height: 1em;
+}
+
+h1 {
+  @include theta-wave(math.pow($tw__scale--start, 5) + 0em, math.pow($tw__scale--end, 5) + 0em);
+}
+h2 {
+  @include theta-wave(math.pow($tw__scale--start, 4) + 0em, math.pow($tw__scale--end, 4) + 0em);
+}
+h3 {
+  @include theta-wave(math.pow($tw__scale--start, 3) + 0em, math.pow($tw__scale--end, 3) + 0em);
+}
+h4 {
+  @include theta-wave(math.pow($tw__scale--start, 2) + 0em, math.pow($tw__scale--end, 2) + 0em);
+}
+h5 {
+  @include theta-wave($tw__scale--start + 0em, $tw__scale--end + 0em);
+}
+h6 {
+  font-size: 1em;
+}
+
+h1:not(:last-child),
+h2:not(:last-child),
+h3:not(:last-child),
+h4:not(:last-child),
+h5:not(:last-child),
+h6:not(:last-child) {
+  margin-bottom: 0.75em;
+}
+
+main:focus {
+  outline: none;
+}
+
+nav {
+  outline: none;
+}
