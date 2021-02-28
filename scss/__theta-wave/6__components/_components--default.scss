@@ -1,9 +1,13 @@
 .component {
   width: 100%;
 }
-
-.component:not(.flush) > .wrapper {
-  padding: 1.5em;
+.component > .wrapper,
+.component__element {
+  margin: 0.75em;
+}
+.component.is-flush > .wrapper,
+.component.is-flush .component__element {
+  @include margin-reset;
 }
 
 @media all and (min-width: #{map-get($breakpoints, 'xsmall')}) {

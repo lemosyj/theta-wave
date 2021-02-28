@@ -1,27 +1,23 @@
 .layout { }
 
-.wrapper {
-  @include box-reset;
-}
-
 .layout > .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  padding: 1.5em;
 }
-.layout:not(.flush) > .wrapper {
-  padding:  1.5em;
+.layout.is-flush > .wrapper {
+  @include padding-reset;
 }
 
 @media all and (min-width: #{map-get($breakpoints, 'giant')}) {
   .layout--align-left > .wrapper {
-    margin-right: calc((100% - #{map-get($breakpoints, 'giant')})/2);
+    margin-right: calc((100% - #{map-get($breakpoints, 'giant')}) / 2);
   }
   .layout--align-center > .wrapper {
     margin: 0 calc((100% - #{map-get($breakpoints, 'giant')}) / 2);
   }
   .layout--align-right > .wrapper {
-    margin-left: calc((100% - #{map-get($breakpoints, 'giant')})/2);
+    margin-left: calc((100% - #{map-get($breakpoints, 'giant')}) / 2);
   }
 }
 
